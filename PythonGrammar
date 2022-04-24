@@ -8,3 +8,62 @@ IDE (Intergrated Development Environment) : jupyter notebook / visual studio cod
 1) open cmd.exe (or anaconda3 prompt)
 2) enter "jupyter notebook"
 3) open the url on browser
+
+# id(variable_name)
+# 해당 변수의 주소를 보여줌.
+# Python 의 주소 바인딩은 C 와 다름.
+# 자주 사용되는 범위의 정수값은 미리 메모리에 올려둔 후, 해당 값을 바라보게 하다보니
+다른 변수여도 같은 주소를 가질 수 있음.
+# 범위를 벗어나는 값들은 변수마다 주소가 다르게 할당됨.
+
+# len(variable_name)
+# 문자열의 길이를 반환 (int)
+
+# variable_name[num1:num2]
+# slice 기능으로 index = num1 부터 num2 이전까지의 문자열을 반환함. (string)
+ex) strEx = "Hello world"
+    print(strEx[0:5])
+>> Hello
+# 인덱스에 음수를 넣으면 그만큼 뒤에서 count 함.
+ex) print(strEx[6:-1])
+>> worl
+
+# variable_name.split()
+# 변수를 split 한다.
+# 여러 개로 split 될 경우, list로 반환함.
+ex) strEx = "Hello World"
+    strEx.split(' ')  # 공백 기준으로 나눈다.
+    print(strEx.split(' '))
+    >> ['Hello', 'World']
+    print(strEx.split(' ')[1])
+    >> World
+
+# 문자열 합치기 : +
+ex) print("Hello" + " " + "World")
+>> Hello WOrld
+
+# type()
+# 객체 타입 반환
+
+# index 관련
+# -1 은 마지막 원소를 가리킨다.
+# -2 는 마지막에서 2번째 원소
+
+# append
+# list 에 새로운 원소를 맨 마지막 위치에 추가한다.
+
+# insert
+# list 에 새로운 원소를 원하는 위치에 추가한다.
+# insert(int, 값)
+# index = int 에 값을 추가한다.
+
+# del 변수[int]
+# list 에서 원화는 위치의 원소를 삭제한다.
+# del 변수[-1]
+# => 마지막 위치의 원소 삭제
+
+# list vs. tuple vs. dict (dictionary)
+# list -> [ ] 안에 나열
+# tuple -> ( ) 안에 나열
+# tuple 은 원소 변경 불가
+# 다만 tuple 도 indexing 시에는 [ ] 사용
