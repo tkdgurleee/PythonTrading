@@ -1,0 +1,10 @@
+Developing Environment
+
+python 3.7
+anaconda 3
+IDE (Intergrated Development Environment) : jupyter notebook / visual studio code
+
+* how to use jupyter notebook
+1) open cmd.exe (or anaconda3 prompt)
+2) enter "jupyter notebook"
+3) open the url on browser
